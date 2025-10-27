@@ -1,4 +1,4 @@
-words=["banana", "apple", "eggplant", "tomato", "cucumber", "computer", "mouse",
+words = ["banana", "apple", "eggplant", "tomato", "cucumber", "computer", "mouse",
  "keyboard", "screen", "phone", "window", "door", "wall", "table", "chair", "notebook",
  "pen", "pencil", "bag", "book", "bus", "car", "plane", "boat", "bicycle", "train", "road",
  "map", "city", "village", "desert", "forest", "sea", "mountain", "snow", "rain", "sun", "moon",
@@ -14,5 +14,5 @@ words=["banana", "apple", "eggplant", "tomato", "cucumber", "computer", "mouse",
  "chocolate", "cake", "ice cream", "coffee", "tea", "pizza", "sugar", "salt", "pepper",
  "onion", "garlic", "flour", "rice", "soup", "milk", "chicken", "ship", "car",
  "motorcycle", "helicopter", "cargo", "port", "station", "road", "interchange",
- "tunnel", "house", "building", "stairs","floor", "roof", "room", "kitchen", "bathroom",
- "toilet", "living room"]
+ "tunnel", "house", "building", "stairs","floor", "roof", "room", "kitchen",
+ "bathroom", "toilet", "living room" ]
