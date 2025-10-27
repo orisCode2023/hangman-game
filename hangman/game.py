@@ -1,10 +1,11 @@
 def init_state(secret: str, max_tries: int):
     return {
-        "secret": str,  # הלימה תידוסה
-        "display": list[str],  # תמישר םיוות הגוצתל , "_"
-        "guessed": set[str],  # תויתוא ושחונש
-        "wrong_guesses": int,  # המכ תויועט ועצוב
-        "max_tries": int}  # הלבג}
+        "secret": str,
+        "display": list[str],
+        "guessed": set[str],
+        "wrong_guesses": int,
+        "max_tries": int
+    }
 
 
 def validate_guess(ch: str, guessed: set[str]):
