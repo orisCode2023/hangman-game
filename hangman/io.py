@@ -9,7 +9,7 @@ def prompt_guess():
 
 def print_status(state: dict):
     print(f"{state["display"]} \nThe guess list {state["guessed"]} \n" 
-          f"Number of guess remain {state["count_guesses"]}")
+          f"Number of guess {state["count_guesses"]} out of {state["max_tries"]}")
 
 
 def print_result(state: dict):

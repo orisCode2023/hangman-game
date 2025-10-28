@@ -28,10 +28,16 @@ def validate_guess(ch: str, guessed: set[str]):
     return (is_valid, message)
 
 
+def update_guess_number(state : dict):
+    state["count_guesses"] += 1
+    print(f"{state["count_guesses"]}")
+
+
 def apply_guess(state: dict, ch: str):
     validation_tupple = validate_guess(ch, state["guessed"])
     if validation_tupple[0]:
         state["guessed"].add(ch)
+    update_guess_number(state)
     return validation_tupple[0]
 
 
@@ -45,13 +51,17 @@ def update_display(state: dict, ch: str):
 def is_won(state: dict):
     return "_" in state["display"]
 
+print(is_won(init_state(choose(words))))
+
 
 def is_lost(state: dict):
     return state["count_guesses"] == state["max_tries"]
 
+print(is_lost(init_state(choose(words))))
+
 
 def render_display(state: dict):
-    return init_state(choose(words))["display"]
+    return state["display"]
 
 
 def render_summary(state: dict):
