@@ -7,7 +7,7 @@ def play(words: list[str]):
     # while len(words) != 0:
         game_info = init_state(choose(words))
         print(game_info)
-        while is_won and is_lost:
+        while is_won(game_info) and not is_lost(game_info):
             print(render_display(game_info))
             guess = prompt_guess()
             apply = apply_guess(game_info, guess)

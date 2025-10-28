@@ -2,11 +2,17 @@ import random
 from data.words import words
 
 def choose_secret_word(words: list[str]):
-    # print(len(words))
+    already_choose = []
     choose =  random.choice(words)
-    words.pop(words.index(choose))
-    # print(len(words))
+    while len(already_choose) != len(words):
+        if choose in already_choose:
+            choose =  random.choice(words)
+        else:
+            already_choose.append(choose)
+            print(already_choose)
+            break
+    
     return choose
 
-# print(choose_secret_word(words))
+print(choose_secret_word(words))
 

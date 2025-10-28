@@ -51,13 +51,12 @@ def update_display(state: dict, ch: str):
 def is_won(state: dict):
     return "_" in state["display"]
 
-print(is_won(init_state(choose(words))))
+
 
 
 def is_lost(state: dict):
     return state["count_guesses"] == state["max_tries"]
 
-print(is_lost(init_state(choose(words))))
 
 
 def render_display(state: dict):
